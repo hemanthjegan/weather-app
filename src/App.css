@@ -1,0 +1,211 @@
+@import url("https://fonts.google.com/share?selection.family=Oswald:wght@200..700|Roboto+Condensed:ital,wght@0,100..900;1,100..900|Roboto:wght@500;700");
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+*{
+  font-family: "Roboto cpndensed", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../public/assets/bg3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container{
+  width: 350px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgb(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(112,230,243, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cityInput{
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+  background-color: rgb(255, 255, 255, 0.06);
+  color: black
+}
+
+.cityInput::placeholder{
+  color: #999;
+}
+
+.search-icon{
+  padding: 0px 10px 10px 10px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.search-icon img{
+  margin-top: 5px;
+}
+
+.image{
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.image img{
+  width: 160px;
+  height: 160px;
+}
+
+.temp, .location,
+.country{
+  margin-top: 5px;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.temp{
+  font-weight: 900;
+}
+
+.location{
+  color: #ffbc00;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.country{
+  font-size: 20px;
+  color: #999;
+  font-weight:700;
+}
+
+.co-ordinates{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.co-ordinates div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.co-ordinates div span{
+  font-size: 14px;
+}
+
+.humidity-percent,
+.wind-speed,
+.co-ordinates div span :nth-child(2){
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+  padding-top: 5px;
+}
+
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.element{
+  text-align: center;
+}
+
+.icon{
+  height: 50px;
+  width: 50px;
+}
+
+.text{
+  font-size: 12px;
+  color: black;
+}
+
+.copyright{
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+
+.copyright span{
+  color: #111;
+}
+
+
+.loading-message,
+.error-message,
+.city-not-found{
+  margin-top: 10px;
+  color: #888;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
